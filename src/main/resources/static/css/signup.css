@@ -1,0 +1,21 @@
+@media (min-width:767px){
+    .registration{
+        max-width: 400px;
+    }
+}
+
+.member-registration {
+    margin-top : 30px;
+}
+
+.btn-salmon {
+    background-color: salmon;
+}
+
+.form-margin {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-top: 10px;
+}

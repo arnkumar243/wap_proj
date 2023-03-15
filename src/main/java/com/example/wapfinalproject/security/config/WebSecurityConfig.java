@@ -49,9 +49,10 @@ public class WebSecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers("/api/user").permitAll()
+                        .requestMatchers("/api/user/signup").permitAll()
                         .requestMatchers("/css/**").permitAll()
                         .requestMatchers("/js/**").permitAll()
+                        .requestMatchers("/signup.html").permitAll()
                         .requestMatchers("/api/user/verify/**").permitAll()
                         .anyRequest().authenticated())
                 //.userDetailsService(userDetailsService())

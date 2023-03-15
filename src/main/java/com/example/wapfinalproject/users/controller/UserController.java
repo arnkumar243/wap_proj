@@ -16,7 +16,7 @@ public class UserController {
     @Autowired
     CustomUserService customUserService;
 
-    @PostMapping
+    @PostMapping(path="/signup")
     public User signUp(@RequestParam String url, @RequestBody User user) {
         return customUserService.createUser(url, user);
     }
